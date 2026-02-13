@@ -2,6 +2,7 @@ import _ from 'lodash';
 
 import enData from './en.json';
 import idData from './id.json';
+import msData from './ms.json';
 import jaData from './ja.json';
 import zhData from './zh.json';
 
@@ -11,10 +12,11 @@ import type {Translations} from './types';
 // Using {} as first arg prevents mutation of enData.
 const en: Translations = enData;
 const id: Translations = _.merge({}, enData, idData);
+const ms: Translations = _.merge({}, enData, msData);
 const ja: Translations = _.merge({}, enData, jaData);
 const zh: Translations = _.merge({}, enData, zhData);
 
-export const l10n = {en, id, ja, zh} as const;
+export const l10n = {en, id, ms, ja, zh} as const;
 
 /**
  * Typed interpolation helper.
