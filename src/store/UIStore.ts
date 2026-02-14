@@ -35,7 +35,7 @@ export class UIStore {
   _language: AvailableLanguage = 'en';
 
   // List of supported languages
-  supportedLanguages: AvailableLanguage[] = ['en', 'id', 'ja', 'zh'];
+  supportedLanguages: AvailableLanguage[] = ['en', 'id', 'ms', 'ja', 'zh'];
 
   displayMemUsage = false;
 
