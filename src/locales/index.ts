@@ -4,6 +4,8 @@ import enData from './en.json';
 import idData from './id.json';
 import msData from './ms.json';
 import jaData from './ja.json';
+import koData from './ko.json';
+import ruData from './ru.json';
 import zhData from './zh.json';
 
 import type {Translations} from './types';
@@ -14,9 +16,11 @@ const en: Translations = enData;
 const id: Translations = _.merge({}, enData, idData);
 const ms: Translations = _.merge({}, enData, msData);
 const ja: Translations = _.merge({}, enData, jaData);
+const ko: Translations = _.merge({}, enData, koData);
+const ru: Translations = _.merge({}, enData, ruData);
 const zh: Translations = _.merge({}, enData, zhData);
 
-export const l10n = {en, id, ms, ja, zh} as const;
+export const l10n = {en, id, ms, ja, ko, ru, zh} as const;
 
 /**
  * Typed interpolation helper.
