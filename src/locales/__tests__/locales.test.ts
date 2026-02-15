@@ -108,7 +108,7 @@ describe('l10n object', () => {
   });
 
   it('AvailableLanguage type resolves to en | id | ms | ja | ko | ru | zh', () => {
-    // Type-level check: keyof typeof l10n should be 'en' | 'id' | 'ms' | 'ja' | 'zh'
+    // Type-level check: keyof typeof l10n should be 'en' | 'id' | 'ms' | 'ja' | 'ko' | 'ru' | 'zh'
     // At runtime we verify the keys match
     const keys: Array<keyof typeof l10n> = ['en', 'id', 'ms', 'ja', 'ko', 'ru', 'zh'];
     expect(Object.keys(l10n).sort()).toEqual(keys.sort());
