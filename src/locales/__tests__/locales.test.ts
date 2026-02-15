@@ -117,7 +117,8 @@ describe('l10n object', () => {
       'ja',
       'ko',
       'ru',
-      'zh'];
+      'zh',
+];
     expect(Object.keys(l10n).sort()).toEqual(keys.sort());
 
     // This would cause a compile error if AvailableLanguage were wrong:
